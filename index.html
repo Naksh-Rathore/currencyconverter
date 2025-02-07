@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container">
+
+        <h1 id="title">Currency Converter</h1>
+
+        <input type="number" placeholder="Enter Currency"><br><br>
+
+        <label for="startCurrency">Starting Currency:</label>
+
+        <select id="startCurrency">
+            <option value="CAD">Canadian Dollar</option>
+            <option value="USD">United States Dollar</option>
+            <option value="">UAE Dirham</option>
+            <option value="INR">Indian Rupee</option>
+            <option value="MXN">Mexican Peso</option>
+        </select><br><br>    
+
+        <label for="endCurrency">Ending Currency:</label>
+
+        <select id="endCurrency">
+            <option value="CAD">Canadian Dollar</option>
+            <option value="USD">United States Dollar</option>
+            <option value="MXN">Mexican Peso</option>
+            <option value="INR">Indian Rupee</option>
+            <option value="EUR">Euro</option>
+        </select><br><br>
+        
+        <button onclick="convert()">Convert</button>
+
+        <h2></h2>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
