@@ -5,6 +5,12 @@ const startCurrencyTypeElement = document.getElementById("startCurrency");
 const endCurrencyTypeElement = document.getElementById("endCurrency");
 const startCurrencyInputBox = document.querySelector("input");
 
+document.addEventListener("click", event => {
+    if(event.key === "Enter") {
+        convert();
+    }    
+});
+                          
 async function getData(currency) {
     try {
         const response = await fetch(`https://api.frankfurter.dev/v1/latest?base=${currency}`);
